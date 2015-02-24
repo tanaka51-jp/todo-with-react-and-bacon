@@ -17,7 +17,3 @@ table
         td = link_to 'Show', todo
         td = link_to 'Edit', edit_todo_path(todo)
         td = link_to 'Destroy', todo, data: {:confirm => 'Are you sure?'}, :method => :delete
-
-br
-
-= link_to 'New Todo', new_todo_path
