@@ -1,19 +1,3 @@
-h1 Listing todos
+h1 TODO
 
-table
-  thead
-    tr
-      th Name
-      th Done
-      th
-      th
-      th
-
-  tbody
-    - @todos.each do |todo|
-      tr
-        td = todo.name
-        td = todo.done
-        td = link_to 'Show', todo
-        td = link_to 'Edit', edit_todo_path(todo)
-        td = link_to 'Destroy', todo, data: {:confirm => 'Are you sure?'}, :method => :delete
+div data-react-class='TodoComponent' data-react-props=({todos: [{id: 1, name: 'hi', done: true}, {id: 2, name: 'ho', done: false}]}.to_json)
